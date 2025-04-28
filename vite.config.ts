@@ -19,7 +19,10 @@ export default defineConfig({
     port: 5173,
     allowedHosts: true,
     hmr: {
-      overlay: false // Disables the error overlay if you only want console errors
+      overlay: false, // Disables the error overlay if you only want console errors
+      host: 'preview--diesel-generator-404-page.poehali.dev',
+      clientPort: 443,
+      protocol: 'wss'
     }
   },
 });
